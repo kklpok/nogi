@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=STIX+Two+Text&display=swap');
+:root {
+--black: #222;
+--white: #fff;
+--hover: #513018;
+--DimGrey: #696969;
+--DarkSlateGrey: #2F4F4F;
+--border: .1rem solid rgba(0,0,0,.1);
+--box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Anek Tamil", sans-serif;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	text-transform: capitalize;
+
+}
+body {
+	height: 100vh;
+	width: 100%;
+	background: url(/img/fon.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+html {
+font-size: 62.5%;
+overflow-x: hidden;
+}
+
+section {
+	 padding: 1rem 2%; 
+	 
+}
+
+.header {
+	background: var(--hover);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: var(--box-shadow);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+
+ .navbar a {
+	font-size: 2rem;
+	margin-left: 2rem;
+	color: #000;
+	transition: 0.2s;
+}
+ .navbar a:hover {
+	color: var(--DarkSlateGrey);
+}
+
+
+
+
+
+.navbar1 a  {
+	font-size: 2.7rem;
+	margin-left: 2rem;
+	color: #000;
+	transition: 0.2s;
+	
+}
+.navbar1 a :hover{
+	color: var(--DarkSlateGrey);
+} 
+.navbar2 a {
+	font-size: 2.7rem;
+	margin-left: 2rem;
+	color: #000;
+	transition: 0.2s;
+	
+
+}
+
+.navbar2 a :hover{
+	color: var(--DarkSlateGrey);
+} 
+
+#menu {
+	font-size: 3rem;
+	cursor: pointer;
+	display: flex;
+	display: none;
+}
+
+
+@media (max-width: 1200px) {
+	section {
+		padding: 3rem 5%;
+	}
+}
+
+
+@media (max-width: 991px) {
+	section {
+		padding: 3rem 2rem;
+	}
+	html {
+		font-size: 55%;
+	}
+}
+
+@media (max-width: 768px) {
+	section {
+		padding: 3rem 5%;
+	}
+	.header .navbar    {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 0 2rem;
+		background-color: var(--DimGrey);
+		border-top: var(--border);
+		box-shadow: var(--box-shadow);
+	}
+	
+	
+	.navbar a  {
+		display: block;
+		margin: 2rem 0;
+	}
+
+	
+	
+	
+	#menu {
+		display: block;
+	}
+}
